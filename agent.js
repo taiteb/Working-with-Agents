@@ -1,7 +1,6 @@
 class Agent extends Vehicle{
-    constructor(colorOne,
-        colorTwo,
-        colorThree,
+    constructor(stroke,
+        opacity,
         radius) {
     // sets initial position
     let x = Math.random() * (width - 1) + 1;
@@ -12,9 +11,8 @@ class Agent extends Vehicle{
     // colorTwo = (Math.random() * 255);
     // colorThree = (Math.random() * 255);
 
-    this.colorOne = colorOne;
-    this.colorTwo = colorTwo;
-    this.colorThree = colorThree;
+    this.stroke = stroke;
+    this.opacity = opacity;
     this.radius = radius;
     }
 }
