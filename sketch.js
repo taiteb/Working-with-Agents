@@ -43,6 +43,7 @@ function draw() {
     d.update();
     d.show();
     d.edges();
+    d.radius += random(-0.8, 0.8);
   }
   // Updating current and projected color values
   if (frameCount % 35 === 0) {
@@ -58,9 +59,10 @@ function draw() {
       colors[i][2] = random(100, 255);
     }
   }
-  // click resets and spawns two more 
+
+  // click spawns two more 
   if (mouseIsPressed){
-    background(5,5,5);
+    //background(5,5,5);
     for (let i = 0; i < 2; i++) {
       donuts.push(new Guy());
     }
