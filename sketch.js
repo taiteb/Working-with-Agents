@@ -1,6 +1,6 @@
 // Outlining creation of objects
 let donuts = [];
-let initialDonuts = 17;
+let initialDonuts = 7;
 let newDonuts = 2;
 
 // Defining color gradient list
@@ -13,6 +13,7 @@ let colors = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], []];
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(5, 5, 5);
+  frameRate(30);
   // Making the objects
   for (let i = 0; i < initialDonuts; i++) {
     donuts.push(new Guy());
